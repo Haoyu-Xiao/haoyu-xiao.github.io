@@ -1,0 +1,627 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<title> Haoyu Xiao </title>
+<meta charset="utf-8">
+<meta name="description" content="Haoyu Xiao">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="photo.css" type="text/css" />
+<style>
+    A {
+        text-decoration: none
+    }
+
+    body {
+        /*font: 100% Verdana, Arial, Helvetica, sans-serif;*/
+        font-family: "Helvetica Neue";
+        background-color: #FFFFFF;
+        list-style: blue4;
+        margin: 0;
+        padding: 0;
+    }
+
+    body table {
+        margin: 0;
+        padding: 0;
+    }
+
+    body table tr {
+        margin: 0;
+        padding: 0;
+    }
+
+    .year {
+        color: #4169E1;
+        text-decoration: none;
+    }
+
+    .note-me {
+        color: #391bb2;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .award {
+        color: red;
+    }
+
+    #pub,
+    #misc {
+        font-family: helvetica;
+    }
+
+    #pub li,
+    #misc li {
+        margin-bottom: 15px;
+    }
+
+    #pub li div,
+    #misc li div {
+        margin-bottom: 5px;
+    }
+
+    #pub li .title {
+        color: #333;
+        font-weight: bold;
+    }
+
+    #pub li .author {
+        font-style: italic;
+    }
+
+
+
+    #misc li .title {
+        color: #333;
+        font-weight: bold;
+        font-size: 1.0rem;
+    }
+
+    #misc .detail {
+        font-size: 0.9rem;
+        color: #666;
+        text-align: justify;
+    }
+
+    #tracker {
+        text-align: center;
+        margin: 10px auto;
+        /* widows: 50px; */
+    }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .banner {
+        background: #4169E1;
+        position: absolute;
+        min-height: 56px;
+        padding: 0 8px;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    .content {
+        top: 56px;
+        position: absolute;
+        overflow-y: scroll;
+        bottom: 0;
+    }
+
+    @media screen and (max-width: 889px) {
+        .content {
+            top: 112px;
+            position: absolute;
+            overflow-y: scroll;
+            bottom: 0;
+        }
+    }
+
+    .banner .wrapper {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .banner::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .banner a {
+        color: white;
+        margin-right: 20px;
+    }
+
+    .site-title {
+        font-size: 1.625rem;
+        font-weight: 400;
+        line-height: 54px;
+        margin-bottom: 0;
+        float: left;
+        margin-left: 0;
+        font-family: "Helvetica Neue";
+    }
+
+    .nav-wrapper {
+        float: right;
+        line-height: 54px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 889px) {
+        .site-title {
+            font-size: 1.625rem;
+            font-weight: 400;
+            line-height: 54px;
+            margin-bottom: 0;
+            float: left;
+            margin-left: -5px;
+            font-family: "Helvetica Neue";
+        }
+    }
+
+    .avatar-size {
+        width: 343px;
+        height: 257px;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .avatar-wrapper {
+        float: right;
+        padding: 0 10px;
+    }
+
+    @media screen and (max-width: 512px) {
+        .avatar-size {
+            width: 100vw;
+            height: 143vw;
+            margin: 0px;
+        }
+
+        .avatar-wrapper {
+            float: right;
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 570px) {
+        .banner {
+            background: #4169E1;
+            position: absolute;
+            min-height: 56px;
+            padding: 0 8px;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .content {
+            top: 56px;
+            position: absolute;
+            overflow-y: scroll;
+            bottom: 0;
+        }
+
+        .nav-wrapper {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            text-align: right;
+            background-color: #424242;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+        .menu-span {
+            top: 10px;
+            position: relative;
+            background: #424242;
+            text-align: center;
+            padding: 9px;
+            line-height: 0;
+        }
+
+        #inputMenu:checked~.nav {
+            display: block;
+            width: 138px;
+            padding-bottom: 5px;
+            padding-top: 22px;
+        }
+
+        .nav {
+            display: none;
+        }
+    }
+
+    details {
+        margin: 10px;
+        text-align: justify;
+        font-size: 1.0rem;
+        font-weight: normal;
+        line-height: 1.3;
+    }
+
+    details summary:hover {
+        color: #0056b3;
+        /* Change color on hover */
+        text-decoration: underline;
+    }
+
+    details div {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        margin: 10px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    details p {
+        text-align: justify;
+        text-indent: 1rem;
+        color: #666;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+</style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function showPub(year) {
+            if (year.length === 0) {//show all
+                pubs = document.getElementsByClassName("pub");
+                for (var i = 0; i < pubs.length; i++) {
+                    pubs[i].style.display = "list-item";
+                }
+            }
+            else {
+                pubs = document.getElementsByClassName("pub");
+                for (var i = 0; i < pubs.length; i++) {
+                    pubs[i].style.display = "none";
+                }
+
+                pubs = document.getElementsByClassName(year);
+                for (var i = 0; i < pubs.length; i++) {
+                    pubs[i].style.display = "list-item";
+                }
+            }
+        }
+        // window.onload= function(){
+        //     showPub('2025');
+        // }
+    </script>
+
+    <div class="banner">
+        <div class="wrapper">
+            <a class="site-title" href="#">Haoyu Xiao</a>
+            <div class="nav-wrapper">
+                <input type="checkbox" id="inputMenu" style="display: none" />
+                <label class="menu-icon" for="inputMenu">
+                    <span class="menu-span">
+                        <svg viewBox="0 0 18 15" width="18px" height="15px">
+                            <path fill="#ffffff"
+                                d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z">
+                            </path>
+                            <path fill="#ffffff"
+                                d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z">
+                            </path>
+                            <path fill="#ffffff"
+                                d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z">
+                            </path>
+                        </svg>
+                    </span>
+                </label>
+                <nav class="nav">
+                    <a href="#about">About</a>
+                    <a href="#background">Background</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#misc">Projects & Experiences</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;" class="content">
+        <a name="about"></a>
+        <div style="max-width:800px;width:90%;margin:8px auto;">
+            <br>
+            <p class="avatar-wrapper">
+                <img class="avatar-bg avatar-size"
+                    style="padding:auto;vertical-align: middle;border:1px;background-size: 100% 100%;" src="photo.jpg"
+                    alt="Haoyu Xiao" />
+            </p>
+            <p style="font-size: 1.1rem;">
+                I am a fifth-year Ph.D student in the <a href="https://security.fudan.edu.cn">System and Software
+                    Security Laboratory</a> of the <a href="http://www.cs.fudan.edu.cn">School of Computer Science</a>
+                at <a href="http://www.fudan.edu.cn/">Fudan University</a>, supervised by <a
+                    href="https://yuanxzhang.github.io">Prof. Yuan Zhang</a>.
+                My research focuses on software security, program analysis, and fuzzing.
+            </p>
+            <p style="font-size: 1.1rem;">
+                During my doctoral studies, my research mainly focuses on the security of embedded systems, especially
+                the firmware of IoT devices.
+                I've designed several novel techniques that have detected thousands of 0-day vulnerabilities.
+                The academic results have been published in top-tier security conferences, including <a
+                    href="https://sp2025.ieee-security.org/">IEEE S&P</a>, and <a
+                    href="https://www.sigsac.org/ccs/CCS2024/">ACM CCS</a>.
+            </p>
+            <p style="font-size: 1.1rem;">
+                I am particularly interested in building effective and intelligent binary analysis techniques to
+                enhance the security of software systems.
+            </p>
+            <p style="font-family: Courier New">
+                <b>Email:</b> hyxiao20 [AT] fudan.edu.cn <br>
+                <b>Github:</b> <a href="https://github.com/Haoyu-Xiao">https://github.com/Haoyu-Xiao</a> <br>
+            </p>
+
+            <hr size=2>
+            <h3><a name="">News</a></h3>
+            <div>
+                <ul>
+                    <li>[April, 2025] One paper accepted by <a href="https://sp2025.ieee-security.org/">IEEE S&P'25</a>.
+                        I'm going to present it at the conference.
+                        If you are attending the conference, I would be delighted to connect with you there!<br />
+                </ul>
+            </div>
+
+            <hr size=2>
+            <h3><a name="background">Background</a></h3>
+            <div>
+                <ul>
+                    <li>2020~Now, Fudan University, School of Computer Science, Ph.D candidate</li>
+                    <li>2016~2020, Harbin Institute of Technology (HIT), School of Computer Science, B.Eng</li>
+                </ul>
+            </div>
+
+            <hr size=2>
+            <h3><a name="publications">Publications </a>
+                <!-- <a class="year" href="javascript:showPub('2025');">( 25 /</a>
+            <a class="year" href="javascript:showPub('2024');">24 /</a>
+            <a class="year" href="javascript:showPub('2023');">23 /</a>
+            <a class="year" href="javascript:showPub('2022');">22 /</a>
+            -->
+            </h3>
+            <div id="pub">
+                <ol>
+                    <li class="pub 2025">
+                        <div class="title">HouseFuzz: Service-Aware Grey-Box Fuzzing for Vulnerability Detection in
+                            Linux-Based Firmware. </div>
+                        <div class="author"><b class="note-me">Haoyu Xiao</b>, Ziqi Wei, Jiarun Dai, Bowen Li, Yuan
+                            Zhang, Min Yang.
+                        </div>
+                        <div class="venue">In Proceedings of the 46th IEEE Symposium on Security and Privacy (S&P), San
+                            Francisco, CA, USA, May 12-15, 2025
+                            (to appear).
+                            <a href="./paper/housefuzz-sp25.pdf">[Paper]</a>
+                            <a href="https://github.com/HouseFuzz/HouseFuzz">[Code]</a>
+                        </div>
+                        <details class="abstract">
+                            <summary>Abstract.</summary>
+                            <div>
+                                <p>
+                                    To date, grey-box fuzzing has become an essential technique to detect
+                                    vulnerabilities implied in Linux-based firmware. However, existing fuzzing
+                                    approaches commonly encounter three overlooked obstacles stemming from firmware
+                                    service characteristics, which largely hinder the effectiveness and efficiency of
+                                    vulnerability identification. Firstly, the multi-process nature of firmware services
+                                    is oversimplified during both the emulation and the fuzzing procedures, limiting the
+                                    scope of firmware testing. Furthermore, firmware services usually incorporate
+                                    customized service protocols, which feature rich and stringent semantic constraints,
+                                    causing unique challenges for input generation. To address these obstacles, this
+                                    paper proposes a service-aware grey-box fuzzing tool HouseFuzz. During the firmware
+                                    emulation, HouseFuzz carefully traverses the system initialization procedure for
+                                    identifying those network-facing and daemon processes overlooked by existing
+                                    approaches. After that, during the fuzzing procedure, HouseFuzz features a
+                                    multi-process fuzzing framework, enabling the comprehensive inspection of firmware
+                                    services activated via multiple processes. Furthermore, HouseFuzz leverages both
+                                    offline and online firmware service analysis to capture the token-level semantic
+                                    constraints of customized service protocols, based on which HouseFuzz can
+                                    effectively generate high-quality test cases. In evaluation, compared to SoTA
+                                    grey-box firmware fuzzing approaches, HouseFuzz identified 76% more network
+                                    services, achieved 33.4% more code coverage, and detected 175% more 0-day
+                                    vulnerabilities on the same firmware dataset.
+                                </p>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="pub 2024">
+                        <div class="title">Accurate and Efficient Recurring Vulnerability Detection for IoT Firmware.
+                        </div>
+                        <div class="author"><b class="note-me">Haoyu Xiao</b>, Yuan Zhang, Minghang Shen, Chaoyang Lin,
+                            Can Zhang,
+                            Shengli Liu,
+                            Min Yang. </div>
+                        <div class="venue">In Proceedings of the 31st ACM Conference on Computer and Communications
+                            Security (CCS), Salt Lake City, USA, October 14-18, 2024.
+                            <a href="./paper/firmrec-ccs24-full.pdf">[Full Version]</a>
+                            <a href="./paper/firmrec-ccs24.pdf">[Paper]</a>
+                            <a href="https://github.com/seclab-fudan/FirmRec">[Code]</a>
+                        </div>
+                        <details class="abstract">
+                            <summary>Abstract.</summary>
+                            <div>
+                                <p>
+                                    IoT firmware faces severe threats to security vulnerabilities. As an
+                                    important method to detect vulnerabilities, recurring vulnerability
+                                    detection has not been systematically studied in IoT firmware.
+                                    In fact, existing methods would meet significant challenges from
+                                    two aspects. First, firmware vulnerabilities are usually reported
+                                    in texts without too much code-level information, e.g., security
+                                    patches. Second, firmware images are released as binaries, making
+                                    the analysis of known vulnerabilities and the detection of unknown
+                                    vulnerabilities quite difficult.
+                                </p>
+                                <p>
+                                    This paper presents FirmRec, the first recurring vulnerability
+                                    detection approach for IoT firmware. FirmRec features several new
+                                    techniques to enable accurate and efficient vulnerability detection.
+                                    First, it proposes a new exploitation-based vulnerability signature
+                                    representation for firmware, which does not use syntactic
+                                    code features but the semantic features along the dynamic vulnerability
+                                    exploitation procedure (thus is more resilient to binary
+                                    code changes and fits the context of binary-only firmware). Second,
+                                    given a vulnerability report, it designs concolic execution-based
+                                    vulnerability signature extraction to understand the vulnerability
+                                    exploitation procedure and generate an exploitation-based vulnerability
+                                    signature. Third, based on known vulnerability signatures, it
+                                    employs a two-stage pipeline to accurately and efficiently detect
+                                    recurring vulnerabilities.
+                                </p>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="pub 2022">
+                        <div class="title">Exploit The Last Straw that Breaks Android System.</div>
+                        <div class="author">Lei Zhang, Keke Lian, <b class="note-me">Haoyu Xiao</b>, Zhibo Zhang,
+                            Peng Liu, Yuan Zhang, Min Yang, Haixin Duan.</div>
+                        <div class="venue">In Proceedings of the 43rd IEEE Symposium on Security and Privacy (S&P), San
+                            Francisco, CA, May 22-26, 2022.
+                            <a href="./paper/strawfuzzer-oakland22.pdf">[Paper]</a>
+                            <a href="https://github.com/LianKee/StrawFuzzer">[Code]</a>
+                        </div>
+                        <details>
+                            <summary>Abstract.</summary>
+                            <div>
+                                <p>
+                                    The Android system services usually play a critical role in running multiple
+                                    important
+                                    tasks, and delivering seamless user experiences, e.g., conveniently storing user
+                                    data.
+                                    In this paper, we conduct the first systematic security study on the data storing
+                                    process in Android system services, and consequently discover a novel class of
+                                    design
+                                    flaws (named Straw), which can lead to serious DoS (Denial-of-Service) attacks,
+                                    e.g.,
+                                    permanently crashing the whole victim Android device.
+                                </p>
+                                <p>
+                                    Then we propose a novel directed fuzzing based approach, called StrawFuzzer, to
+                                    automatically vet all system services against the straw vulnerabilities. StrawFuzzer
+                                    balances the trade- off between path exploration and vulnerability exploitation. By
+                                    applying StrawFuzzer on three Android systems with the latest security updates, we
+                                    identified 35 unique straw vulnerabilities affecting 474 interfaces across 77 system
+                                    services and successfully generated corresponding exploits, which can be used to
+                                    conduct
+                                    various permanent/temporary DoS attacks. We have reported our findings with
+                                    suggestions
+                                    for repairing the vulnerabilities to corresponding vendors. Up to now, Google has
+                                    rated
+                                    our vulnerability as high severity.
+                                </p>
+                            </div>
+                        </details>
+                    </li>
+                </ol>
+            </div>
+
+            <hr size=2>
+            <h3><a name="misc">Projects & Experiences</a>
+                <div id="misc">
+                    <ul>
+                        <li>
+                            <div class="title">Capture the Flag (CTF) Competition Experiences.</div>
+                            <details>
+                                <summary>Details.</summary>
+                                <div>
+                                    <p>
+                                        During 2017~2019 I was the chairman of the HIT Lilac CTF team. We have actively
+                                        participated in CTF competitions and won quantities of awards. The awards
+                                        include the 5th Prize in "Defcon China CTF 2018", the 2nd Prize in the "National
+                                        College Students Information Security Innovation Competition", and the 5th Prize
+                                        in the "National College Network Operation and Maintenance Competition 2018".
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <div class="title">Binary Patch Existence Detection Project.</div>
+                            <details>
+                                <summary>Details.</summary>
+                                <div>
+                                    <p>
+                                        This project is a collaboration between Alibaba Security and Fudan University.
+                                        It focuses on detecting whether a given upstream vulnerability patch has been
+                                        successfully applied to the downstream software binaries, which is essential for
+                                        supply chain security. In this project, I worked as a project lead, and we built
+                                        our system based <a
+                                            href="https://yuanxzhang.github.io/paper/pdiff-ccs20.pdf">PDiff</a>, a
+                                        state-of-the-art approach for kernel patch existence detection. We have proposed
+                                        a set of new symbolic execution-based methods to improve the effectiveness and
+                                        scalability of PDiff. As a result, this project achieves a high accuracy of 94%
+                                        and covers 85% of tasks on a large dataset consisting of 492 real-world programs
+                                        and 151 real-world vulnerability patches.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <div class="title">Educational Decompiler for Fudan PoRE Course.</div>
+                            <details>
+                                <summary>Details.</summary>
+                                <div>
+                                    <p>
+                                        I have built a decompiler for educational purposes as part of the TA duties for
+                                        the Principle of Reverse Engineering (PoRE) course at Fudan University (2024,
+                                        2025). If you are interested, please feel free to contact me, I'd like to share
+                                        more information about this project.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <div class="title">Security Engineering Internship in <a
+                                    href="https://consumer.huawei.com">Huawei Consumer BG</a> in 2017</div>
+                            <details>
+                                <summary>Details.</summary>
+                                <div>
+                                    <p>
+                                        Primarily focused on vulnerability analysis for mobile system at that time.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <div class="title">Security Engineering Internship in <a
+                                    href="https://www.tencent.com">Tecent IEG</a> in 2018</div>
+                            <details>
+                                <summary>Details.</summary>
+                                <div>
+                                    <p>
+                                        Primarily focused on game security at that time. Enjoyed writing cheat engines
+                                        and analyzing anti-cheat mechanisms.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="tracker">
+                    <a href="https://clustrmaps.com/site/1c5t2" title="ClustrMaps"><img
+                            src="//www.clustrmaps.com/map_v2.png?d=7BFJePju1GV1KQlABCZ4U5FRltfdFbNcrtZw6nHYM68&cl=ffffff"></a>
+                </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
