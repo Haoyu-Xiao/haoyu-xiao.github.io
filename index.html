@@ -89,7 +89,6 @@
         text-align: center;
         margin: 10px auto;
         /* widows: 50px; */
-        display: none;
     }
 
     p {
@@ -252,7 +251,7 @@
     }
 
     details {
-        margin: 10px;
+        margin: 0;
         text-align: justify;
         font-size: 1.0rem;
         font-weight: normal;
@@ -269,10 +268,6 @@
         border: 1px solid #ddd;
         border-radius: 5px;
         background-color: #f9f9f9;
-        margin: 10px;
-        padding: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     details p {
@@ -280,7 +275,9 @@
         text-indent: 1rem;
         color: #666;
         font-size: 1rem;
-        line-height: 1.5;
+        line-height: 1.3;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 </style>
 </head>
@@ -315,7 +312,6 @@
         <div class="wrapper">
             <a class="site-title" href="#">Haoyu Xiao</a>
             <div class="nav-wrapper">
-                <input type="checkbox" id="inputMenu" style="display: none" />
                 <label class="menu-icon" for="inputMenu">
                     <span class="menu-span">
                         <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -332,10 +328,11 @@
                     </span>
                 </label>
                 <nav class="nav">
-                    <a href="#about">About</a>
+                    <!-- <a href="#about">About</a> -->
                     <a href="#background">Background</a>
                     <a href="#publications">Publications</a>
                     <a href="#misc">Projects & Experiences</a>
+                    <a href="./paper/resume.pdf">Chinese CV</a>
                 </nav>
             </div>
         </div>
@@ -544,10 +541,11 @@
                                 <div>
                                     <p>
                                         During 2017~2019 I was the chairman of the HIT Lilac CTF team. We have actively
-                                        participated in CTF competitions and won quantities of awards. The awards
-                                        include the 5th Prize in "Defcon China CTF 2018", the 2nd Prize in the "National
-                                        College Students Information Security Innovation Competition", and the 5th Prize
-                                        in the "National College Network Operation and Maintenance Competition 2018".
+                                        participated in CTF competitions and won quantities of awards. 
+                                        The awards include the 1th Prize in 2019 X-NUCA CTF,
+                                        the 3th Prize in the "National College Network Operation and Maintenance Competition 2019",
+                                        the 2nd Prize in the "National College Students Information Security Innovation Competition",
+                                        and the 5th Prize in "Defcon China CTF 2018".
                                     </p>
                                 </div>
                             </details>
@@ -562,8 +560,7 @@
                                         It focuses on detecting whether a given upstream vulnerability patch has been
                                         successfully applied to the downstream software binaries, which is essential for
                                         supply chain security. In this project, I worked as a project lead, and we built
-                                        our system based <a
-                                            href="https://yuanxzhang.github.io/paper/pdiff-ccs20.pdf">PDiff</a>, a
+                                        our system based on <a href="https://yuanxzhang.github.io/paper/pdiff-ccs20.pdf">PDiff</a>, a
                                         state-of-the-art approach for kernel patch existence detection. We have proposed
                                         a set of new symbolic execution-based methods to improve the effectiveness and
                                         scalability of PDiff. As a result, this project achieves a high accuracy of 94%
