@@ -1,10 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
-<html>
-<title> Haoyu Xiao </title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<meta name="description" content="Haoyu Xiao">
-<meta name="keywords" content="">
+<title>Haoyu Xiao | Researcher in Software Security</title>
+<meta name="description" content="Haoyu Xiao is a software security researcher focused on program analysis, fuzzing, and embedded and IoT firmware security.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://haoyu-xiao.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Haoyu Xiao">
+<meta property="og:title" content="Haoyu Xiao | Researcher in Software Security">
+<meta property="og:description" content="Haoyu Xiao is a software security researcher focused on program analysis, fuzzing, and embedded and IoT firmware security.">
+<meta property="og:url" content="https://haoyu-xiao.github.io/">
+<meta property="og:image" content="https://haoyu-xiao.github.io/photo.jpg">
 <link rel="stylesheet" href="photo.css" type="text/css" />
 <style>
     A {
@@ -146,10 +154,22 @@
         font-size: 1.625rem;
         font-weight: 400;
         line-height: 54px;
-        margin-bottom: 0;
+        margin: 0;
         float: left;
         margin-left: 0;
         font-family: "Helvetica Neue";
+    }
+
+    .site-title a {
+        color: white;
+        margin-right: 0;
+        text-decoration: none;
+    }
+
+    .section-heading {
+        font-size: 1.17em;
+        font-weight: bold;
+        margin: 1em 0;
     }
 
     .nav-wrapper {
@@ -280,6 +300,28 @@
         padding-right: 15px;
     }
 </style>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Haoyu Xiao",
+    "url": "https://haoyu-xiao.github.io/",
+    "jobTitle": "Software Security Researcher",
+    "description": "Haoyu Xiao is a software security researcher focused on program analysis, fuzzing, and embedded and IoT firmware security.",
+    "image": "https://haoyu-xiao.github.io/photo.jpg",
+    "sameAs": [
+        "https://github.com/Haoyu-Xiao"
+    ],
+    "knowsAbout": [
+        "Software Security",
+        "Program Analysis",
+        "Fuzzing",
+        "Embedded Systems Security",
+        "IoT Firmware Security",
+        "Binary Analysis"
+    ]
+}
+</script>
 </head>
 
 <body>
@@ -308,9 +350,9 @@
         // }
     </script>
 
-    <div class="banner">
+    <header class="banner">
         <div class="wrapper">
-            <a class="site-title" href="#">Haoyu Xiao</a>
+            <h1 class="site-title"><a href="#about">Haoyu Xiao</a></h1>
             <div class="nav-wrapper">
                 <label class="menu-icon" for="inputMenu">
                     <span class="menu-span">
@@ -336,15 +378,15 @@
                 </nav>
             </div>
         </div>
-    </div>
-    <div style="width:100%;" class="content">
-        <a name="about"></a>
+    </header>
+    <main style="width:100%;" class="content">
         <div style="max-width:800px;width:90%;margin:8px auto;">
+        <section id="about" aria-label="About Haoyu Xiao">
             <br>
             <p class="avatar-wrapper">
                 <img class="avatar-bg avatar-size"
                     style="padding:auto;vertical-align: middle;border:1px;background-size: 100% 100%;" src="photo.jpg"
-                    alt="Haoyu Xiao" />
+                    alt="Haoyu Xiao portrait" />
             </p>
             <p style="font-size: 1.1rem;">
                 I am a fifth-year Ph.D student in the <a href="https://security.fudan.edu.cn">System and Software
@@ -368,9 +410,11 @@
                 <b>Email:</b> hyxiao20 [AT] fudan.edu.cn <br>
                 <b>Github:</b> <a href="https://github.com/Haoyu-Xiao">https://github.com/Haoyu-Xiao</a> <br>
             </p>
+        </section>
 
             <hr size=2>
-            <h3><a name="">News</a></h3>
+            <section id="news" aria-labelledby="news-heading">
+            <h2 id="news-heading" class="section-heading">News</h2>
             <div>
                 <ul>
                     <li>[December, 2025] One paper accepted by <a
@@ -383,24 +427,27 @@
                     </li>
                 </ul>
             </div>
+            </section>
 
             <hr size=2>
-            <h3><a name="background">Background</a></h3>
+            <section id="background" aria-labelledby="background-heading">
+            <h2 id="background-heading" class="section-heading">Background</h2>
             <div>
                 <ul>
                     <li>2020~Now, Fudan University, School of Computer Science, Ph.D candidate</li>
                     <li>2016~2020, Harbin Institute of Technology (HIT), School of Computer Science, B.Eng</li>
                 </ul>
             </div>
+            </section>
 
             <hr size=2>
-            <h3><a name="publications">Publications </a>
-                <!-- <a class="year" href="javascript:showPub('2025');">( 25 /</a>
+            <section id="publications" aria-labelledby="publications-heading">
+            <h2 id="publications-heading" class="section-heading">Publications</h2>
+            <!-- <a class="year" href="javascript:showPub('2025');">( 25 /</a>
             <a class="year" href="javascript:showPub('2024');">24 /</a>
             <a class="year" href="javascript:showPub('2023');">23 /</a>
             <a class="year" href="javascript:showPub('2022');">22 /</a>
             -->
-            </h3>
             <div id="pub">
                 <ol>
                     <li class="pub 2026">
@@ -598,10 +645,12 @@
                     </li>
                 </ol>
             </div>
+            </section>
 
             <hr size=2>
-            <h3><a name="misc">Projects & Experiences</a>
-                <div id="misc">
+            <section id="misc" aria-labelledby="misc-heading">
+                <h2 id="misc-heading" class="section-heading">Projects &amp; Experiences</h2>
+                <div>
                     <ul>
                         <li>
                             <div class="title">Capture the Flag (CTF) Competition Experiences.</div>
@@ -683,13 +732,14 @@
                         </li>
                     </ul>
                 </div>
+            </section>
 
                 <div id="tracker">
                     <a href="https://clustrmaps.com/site/1c5t2" title="ClustrMaps"><img
                             src="//www.clustrmaps.com/map_v2.png?d=7BFJePju1GV1KQlABCZ4U5FRltfdFbNcrtZw6nHYM68&cl=ffffff"></a>
                 </div>
         </div>
-    </div>
+    </main>
 
 
 </body>
